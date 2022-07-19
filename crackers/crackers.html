@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>enter chrome bar title</title>
+        <link rel="stylesheet" href="crackers.css">
+    </head>
+    <body>
+        <header><h1>Enter shop name<h1></header>
+        <div>
+            <table>
+                <tr class="top">
+                    <td id="solid"><p><strong>S.no</strong></p></td>
+                    <td class="medleng" id="solid"><p><strong>Image</strong></p></td>
+                    <td class="leng" id="solid"><p><strong>Product</strong></p></td>
+                    <td class="medleng" id="solid"><p><strong>Contents</strong></p></td>
+                    <td id="solid"><p><strong>Actual Rate</strong></p></td>
+                    <td id="solid"><p><strong>80% Off</strong></p></td>
+                    <td id="solid"><p><strong>Price</strong></p></td>
+                    <td id="solid"><p><strong>Quantity</strong></p></td>
+                    <td id="solid"><p><strong>Amount</strong></p></td>
+                </tr>
+                <tr><!--for new row copy from this <tr> to this </tr>-->
+                    <td>1</td><!-- change serial number-->
+                    <td><div>
+                        <img src="3.5-inch-Lakshmi-205.jpg" alt="lakshmi" height="100" width="100"><!--to change image change src alone-->
+                    </div></td>
+                    <td>4" Lakshmi/லட்சுமி</td><!--change product name-->
+                    <td>1 packet</td>
+                    <td>27.00</td><!--set actual price-->
+                    <td>18.00</td><!-- set discount amount-->
+                    <td>9.00</td><!--set final prize-->
+                    <td><input onchange="send1(value)" id="quantity" type="Number" value="0"></td><!--change send value as per si.no-->
+                    <td><output id="subtotal1"></output></td><!--send subtotal value as per serial number-->
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><div>
+                        <img src="3.5-inch-Lakshmi-205.jpg" alt="lakshmi" height="100" width="100">
+                    </div></td>
+                    <td>4" Delux Lakshmi/டீலக்ஸ் லட்சுமி</td>
+                    <td>1 packet</td>
+                    <td>45.00</td>
+                    <td>20.00</td>
+                    <td>10.00</td>
+                    <td><input onchange="send2(value)" id="quantity" type="Number" value="0"></td>
+                    <td><output id="subtotal2"></output></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><div>
+                        <img src="3.5-inch-Lakshmi-205.jpg" alt="lakshmi" height="100" width="100">
+                    </div></td>
+                    <td>3 1/2" LAKSHMI/லட்சுமி</td>
+                    <td>1 packet</td>
+                    <td>22.00</td>
+                    <td>15.00</td>
+                    <td>8.00</td>
+                    <td><input onchange="send3(value)" id="quantity" type="Number" value="0"></td>
+                    <td><output id="subtotal3"></output></td>
+                </tr>
+            </table><!--insert new row before this line-->
+        </div><!--no change after this-->
+        <div class="total">
+            <button class="submit" onclick="submit()">submit</button>
+            <table>
+                <tr>
+                    <td id="tot">Actual total</td>
+                    <td><output id="actualtot"></output></td>
+                </tr>
+                <tr>
+                    <td id="tot">total after discount</td>
+                    <td><output id="totalamt"></output></td>
+                </tr>
+            </table>
+        </div>
+        <script src="crackers.js" charset="utf-8"></script>
+    </body>
+
+</html>
